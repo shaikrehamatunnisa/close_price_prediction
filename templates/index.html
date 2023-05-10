@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Stock Price Prediction</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            var availableStocks = [
+                "AAPL",
+                "GOOGL",
+                "AMZN",
+                "MSFT",
+                "FB",
+                "TSLA",
+				"JPM",
+				"JNJ",
+				"V",
+				"PG",
+				"NVDA",
+				"BAC",
+				"MA",
+				"UNH",
+				"HD",
+				"DIS",
+				"KO",
+				"PFE",
+				"MRK",
+				"VZ",
+				"WMT",
+				"NKE",
+				"MCD",
+				"CRM",
+				"ADBE",
+				"ABT",
+				"AMGN",
+				"BA",
+				"BMY",
+				"BP",
+				"C",
+				"CAT",
+				"CSCO",
+				"CVX",
+				"DHR",
+				"DOW",
+				"ECL",
+				"F",
+				"GE",
+				"GM",
+				"GS",
+				"HON",
+				"IBM",
+				"INTC",
+				"JNJ",
+				"KHC",
+				"KMI",
+				"KO",
+				"LMT",
+				"LULU",
+				"MCD",
+				"MDT",
+				"MMM",
+				"MO",
+				"MRK",
+				"MSFT",
+				"NFLX",
+				"NKE",
+				"ORCL",
+				"PEP",
+				"PFE",
+				"PG",
+				"PM",
+				"QCOM",
+				"RTX",
+				"SBUX",
+				"T",
+				"TGT",
+				"TXN",
+				"UNH",
+				"VZ",
+				"WFC",
+				"XOM"
+            ];
+            $("#stock_name").autocomplete({
+                source: availableStocks
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    <form method="post" action="/predict">
+        <label for="stock_name">Enter Stock Name: </label>
+        <input type="text" id="stock_name" name="stock_name">
+        <input type="submit" value="Predict">
+	<div class="bottom-container">
+	    <h2>Quick Links</h2>
+            <div class="button-container">
+		<button><a href="{{url_for('banknifty')}}">banknifty</a></button>
+		<button><a href="{{url_for('AAL')}}">AAL</a></button>
+		<button><a href="{{url_for('AAPL')}}">AAPL</a></button>
+		<button><a href="{{url_for('AMD')}}">AMD</a></button>
+		<button><a href="{{url_for('AMZN')}}">AMZN</a></button>
+		<button><a href="{{url_for('BAC')}}">BAC</a></button>
+		<button><a href="{{url_for('PLTR')}}">PLTR</a></button>
+		<button><a href="{{url_for('SHOP')}}">SHOP</a></button>
+		<button><a href="{{url_for('tesla')}}">tesla</a></button>
+		<button><a href="{{url_for('UBER')}}">UBER</a></button>
+	    </div>
+        </div>
+
+    </form>
+    
+
+</body>
+</html>

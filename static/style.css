@@ -1,0 +1,69 @@
+body {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  font-size: 24px;
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.caution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffe5b4;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.bottom-container {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    left: 0;  
+    
+}
